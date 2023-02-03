@@ -19,7 +19,7 @@ function color($num) {
             </a>
         </div>
         <div class="col-3">
-            <a href="/album.php" class="text-decoration-none" style="<?php color(2); ?>">
+            <a href="/Album/album.php" class="text-decoration-none" style="<?php color(2); ?>">
                 <div class="row my-1">
                     <div class="col-12"><i class="iconfont icon-xiangce"></i></div>
                     <div class="col-12">掠影</div>

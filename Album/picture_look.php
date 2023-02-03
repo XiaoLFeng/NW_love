@@ -1,8 +1,8 @@
 <?php
 // 载入
-include_once $_SERVER['DOCUMENT_ROOT'].'/modules/header-loader.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/modules/header-loader.php';
 // 获取类
-require_once $_SERVER['DOCUMENT_ROOT'].'/modules/Functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/modules/Functions.php';
 $F = new Functions();
 
 /**
@@ -46,11 +46,11 @@ $page = 2;
 </head>
 <body style="background-color: rgba(255,192,203,0.25)">
 <!-- 页首 -->
-<?php include $_SERVER['DOCUMENT_ROOT']."/modules/header.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/modules/header.php"; ?>
 <!-- 页中 -->
 <div class="container-fluid my-4">
     <div class="row">
-        <div class="col-12 mb-3"><a href="./picture.php?album=<?php echo urldecode(htmlspecialchars($_GET['album'])); ?>" class="btn btn-outline-info"><i class="bi bi-backspace"></i> 返回图库</a></div>
+        <div class="col-12 mb-3"><a href="picture.php?album=<?php echo urldecode(htmlspecialchars($_GET['album'])); ?>" class="btn btn-outline-info"><i class="bi bi-backspace"></i> 返回图库</a></div>
         <div class="col-12 mb-5">
             <div class="container-fluid">
                 <img src="<?php echo $ApiAlbum['data'][urldecode(htmlspecialchars($_GET['id']))]['url'] ?>" class="container-fluid">
@@ -70,7 +70,7 @@ $page = 2;
     </div>
 </div>
 <!-- 底部菜单 -->
-<?php include $_SERVER['DOCUMENT_ROOT']."/modules/menu.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/modules/menu.php"; ?>
 </body>
 <script src="/sources/js/bootstrap.min.js"></script>
 <script src="/sources/js/bootstrap.bundle.min.js"></script>

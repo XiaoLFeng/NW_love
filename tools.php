@@ -65,7 +65,7 @@ $page = 3;
             </a>
         </div>
         <div class="col-6 mb-3">
-            <a href="/picture.php?album=28" class="text-decoration-none">
+            <a href="/Album/picture.php?album=28" class="text-decoration-none">
                 <div class="card shadow-sm rounded-3 border-light" style="background-color: rgba(255,192,203,0.2); color: #ff8097">
                     <div class="card-body">
                         <i class="bi bi-activity"></i>&nbsp;&nbsp;咱俩美照

@@ -1,8 +1,8 @@
 <?php
 // 载入
-include_once $_SERVER['DOCUMENT_ROOT'].'/modules/header-loader.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/modules/header-loader.php';
 // 获取类
-require_once $_SERVER['DOCUMENT_ROOT'].'/modules/Functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/modules/Functions.php';
 $F = new Functions();
 
 /**
@@ -42,7 +42,7 @@ $page = 2;
 </head>
 <body style="background-color: rgba(255,192,203,0.25)">
 <!-- 页首 -->
-<?php include $_SERVER['DOCUMENT_ROOT']."/modules/header.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/modules/header.php"; ?>
 <!-- 页中 -->
 <div class="container-fluid my-4">
     <div class="row">
@@ -67,7 +67,7 @@ $page = 2;
                             if ($num % 2 == 0) {
                                 ?>
                                 <div class="col-5 text-start align-self-center text-center">
-                                    <a href="./picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
+                                    <a href="picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
                                         <div class="row">
                                             <div class="col-12" style="width: auto;height: 80%">
                                                 <img src="<?php echo $ApiAlbum['data'][$num]['first_image'] ?>" style="width: 40%" class="rounded-3">
@@ -80,12 +80,12 @@ $page = 2;
                                 <?php
                             } else echo '<div class="col-5 text-end"></div>';
                             ?>
-                            <div class="col-2 text-center"><img src="./sources/img/Album_L_0<?php echo 1+$num%4 ?>.png" class="container"></div>
+                            <div class="col-2 text-center"><img src="/sources/img/Album_L_0<?php echo 1+$num%4 ?>.png" class="container"></div>
                             <?PHP
                             if ($num % 2 == 1) {
                                 ?>
                                 <div class="col-5 text-start align-self-center text-center">
-                                    <a href="./picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
+                                    <a href="picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
                                         <div class="row">
                                             <div class="col-12" style="width: auto;height: 80%">
                                                 <img src="<?php echo $ApiAlbum['data'][$num]['first_image'] ?>" style="width: 40%" class="rounded-3">
@@ -110,7 +110,7 @@ $page = 2;
                         if ($num % 2 == 0) {
                             ?>
                             <div class="col-5 text-start align-self-center text-center">
-                                <a href="./picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
+                                <a href="picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
                                     <div class="row">
                                         <div class="col-12" style="width: auto;height: 80%">
                                             <img src="<?php echo $ApiAlbum['data'][$num]['first_image'] ?>" style="width: 40%" class="rounded-3">
@@ -123,12 +123,12 @@ $page = 2;
                             <?php
                         } else echo '<div class="col-5 text-end"></div>';
                         ?>
-                        <div class="col-2 text-center"><img src="./sources/img/Album_L_0<?php echo 1+$num%4 ?>.png" class="container"></div>
+                        <div class="col-2 text-center"><img src="/sources/img/Album_L_0<?php echo 1+$num%4 ?>.png" class="container"></div>
                         <?PHP
                         if ($num % 2 == 1) {
                             ?>
                             <div class="col-5 text-start align-self-center text-center">
-                                <a href="./picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
+                                <a href="picture.php?album=<?php echo $ApiAlbum['data'][$num]['id'] ?>" class="text-decoration-none">
                                     <div class="row">
                                         <div class="col-12" style="width: auto;height: 80%">
                                             <img src="<?php echo $ApiAlbum['data'][$num]['first_image'] ?>" style="width: 40%" class="rounded-3">
@@ -202,7 +202,7 @@ $page = 2;
     </div>
 </div>
 <!-- 底部菜单 -->
-<?php include $_SERVER['DOCUMENT_ROOT']."/modules/menu.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/modules/menu.php"; ?>
 </body>
 <script type="text/javascript" src="/sources/js/jquery.min.js"></script>
 <script type="text/javascript" src="/sources/js/bootstrap.min.js"></script>

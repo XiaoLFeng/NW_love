@@ -1,8 +1,8 @@
 <?php
 // 载入
-include_once $_SERVER['DOCUMENT_ROOT'].'/modules/header-loader.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/modules/header-loader.php';
 // 获取类
-require_once $_SERVER['DOCUMENT_ROOT'].'/modules/Functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/modules/Functions.php';
 $F = new Functions();
 
 /**
@@ -65,12 +65,12 @@ if (empty($_COOKIE['user'])) {
 </head>
 <body style="background-color: rgba(255,192,203,0.25)">
 <!-- 页首 -->
-<?php include $_SERVER['DOCUMENT_ROOT']."/modules/header.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/modules/header.php"; ?>
 <!-- 页中 -->
 <div class="container-fluid my-4">
     <div class="row">
         <div class="col-6 mb-3 text-start">
-            <a href="./album.php" class="btn btn-outline-info"><i class="bi bi-backspace"></i> 返回主页</a>
+            <a href="album.php" class="btn btn-outline-info"><i class="bi bi-backspace"></i> 返回主页</a>
         </div>
         <?PHP
         if (!empty($_COOKIE['user'])) {
@@ -87,12 +87,12 @@ if (empty($_COOKIE['user'])) {
             while ($ApiAlbum['data'][$num]['id'] != null) {
                 if ($ApiAlbum['data'][$num]['open'] == 1) {
                     ?>
-                    <a class="p-1" href="./picture_look.php?album=<?php echo urldecode(htmlspecialchars($_GET['album'])) ?>&id=<?php echo $num ?>"><img src="<?php echo $ApiAlbum['data'][$num]['url'] ?>!pw80" style="width: 50px" class="rounded-1"></a>
+                    <a class="p-1" href="picture_look.php?album=<?php echo urldecode(htmlspecialchars($_GET['album'])) ?>&id=<?php echo $num ?>"><img src="<?php echo $ApiAlbum['data'][$num]['url'] ?>!pw80" style="width: 50px" class="rounded-1"></a>
                     <?php
                 } else {
                     if ($ApiAlbum['data'][$num]['uploader'] == $_COOKIE['user']) {
                         ?>
-                        <a class="p-1" href="./picture_look.php?album=<?php echo urldecode(htmlspecialchars($_GET['album'])) ?>&id=<?php echo $num ?>"><img src="<?php echo $ApiAlbum['data'][$num]['url'] ?>!pw80" style="width: 50px" class="rounded-1"></a>
+                        <a class="p-1" href="picture_look.php?album=<?php echo urldecode(htmlspecialchars($_GET['album'])) ?>&id=<?php echo $num ?>"><img src="<?php echo $ApiAlbum['data'][$num]['url'] ?>!pw80" style="width: 50px" class="rounded-1"></a>
                         <?php
                     }
                 }
@@ -150,7 +150,7 @@ if (empty($_COOKIE['user'])) {
     </div>
 </div>
 <!-- 底部菜单 -->
-<?php include $_SERVER['DOCUMENT_ROOT']."/modules/menu.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/modules/menu.php"; ?>
 </body>
 <script type="text/javascript" src="/sources/js/jquery.min.js"></script>
 <script type="text/javascript" src="/sources/js/bootstrap.min.js"></script>
