@@ -3,3 +3,4 @@
 .user.ini
 .nginx.htaccess
 .idea/
+/config.inc.php
