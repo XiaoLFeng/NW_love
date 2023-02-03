@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e02b1ce2-34d2-43e7-8faa-1d7279242093" name="Server">
+        <fileTransfer rootFolder="/www/wwwroot/NW_love" accessType="SFTP" host="sz.aliyun.x-lf.cn" port="22" sshConfigId="132ce6aa-21ce-49ac-a9ed-8c311ee6c493" sshConfig="root@sz.aliyun.x-lf.cn:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

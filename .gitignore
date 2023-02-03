@@ -1,0 +1,5 @@
+./config.inc.php
+.htaccess
+.user.ini
+.nginx.htaccess
+/.idea/
