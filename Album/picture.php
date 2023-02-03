@@ -69,14 +69,17 @@ if (empty($_COOKIE['user'])) {
 <!-- 页中 -->
 <div class="container-fluid my-4">
     <div class="row">
-        <div class="col-6 mb-3 text-start">
-            <a href="album.php" class="btn btn-outline-info"><i class="bi bi-backspace"></i> 返回主页</a>
+        <div class="col-4 mb-3 text-start">
+            <a href="album.php" class="btn btn-outline-info"><i class="bi bi-backspace"></i> 返回</a>
         </div>
         <?PHP
         if (!empty($_COOKIE['user'])) {
             ?>
-            <div class="col-6 mb-3 text-end">
-                <button class="btn btn-outline-info text-end" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cloud-plus"></i> 新增图片</button>
+            <div class="col-4 mb-3 text-center">
+                <a href="./album_edit.php?album=<?php echo urldecode(htmlspecialchars($_GET['album'])) ?>" class="btn btn-outline-info text-center"><i class="bi bi-gear"></i> 管理</a>
+            </div>
+            <div class="col-4 mb-3 text-end">
+                <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#AddPhoto"><i class="bi bi-cloud-plus"></i> 新增</button>
             </div>
             <?php
         }
@@ -105,8 +108,8 @@ if (empty($_COOKIE['user'])) {
         </div>
     </div>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+<!-- AddPhoto -->
+<div class="modal fade" id="AddPhoto" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
