@@ -26,7 +26,7 @@ for ($i=0; $i<count($ApiAlbum['data']); $i++) {
     }
 }
 
-if ($ApiAlbum['data'][$i]['id'] == null) {
+if ($Album['id'] == null) {
     header('location: ./album.php');
 }
 
