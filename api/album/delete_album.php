@@ -59,14 +59,14 @@ if ($AFT->Get_Session($PostData['session'])) {
                     $objects = array();
                     if(count($result->getObjectList()) > 0){
                         foreach ($result->getObjectList() as $key => $info){
-                            printf("key name:".$info->getKey().PHP_EOL);
+                            // printf("key name:".$info->getKey().PHP_EOL);
                             $objects[] = $info->getKey();
                         }
                         // 删除目录及目录下的所有文件。
                         $delObjects = $ossClient->deleteObjects($bucket, $objects);
                         foreach ($delObjects as $info){
                             $obj = strval($info);
-                            printf("Delete ".$obj." : Success" . PHP_EOL);
+                            // printf("Delete ".$obj." : Success" . PHP_EOL);
                         }
                     }
 
